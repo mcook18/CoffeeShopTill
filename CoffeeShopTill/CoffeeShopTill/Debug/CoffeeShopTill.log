@@ -1,0 +1,177 @@
+﻿Build started 6/25/2015 3:13:00 PM.
+     1>Project "C:\Users\Madeline\Documents\GitHub\CoffeeShopTill\CoffeeShopTill\CoffeeShopTill\CoffeeShopTill.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp Transaction.cpp order.cpp
+         order.cpp
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C2146: syntax error : missing ';' before identifier '_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C2146: syntax error : missing ';' before identifier 'get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): warning C4183: 'get_item': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(15): error C2535: 'order::order(void)' : member function already defined or declared
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14) : see declaration of 'order::order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2512: 'std::vector' : no appropriate default constructor available
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(4): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2511: 'order::order(item)' : overloaded member function not found in 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2556: 'std::vector<item,std::allocator<_Ty>> order::get_order(void)' : overloaded function differs only by return type from 'std::vector order::get_order(void)'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2371: 'order::get_order' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2079: 'order::get_order' uses undefined class 'std::vector'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2556: 'item order::get_item(void)' : overloaded function differs only by return type from 'int order::get_item(void)'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2371: 'order::get_item' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2065: '_item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(11): error C2511: 'std::vector<item,std::allocator<_Ty>> order::additem(item)' : overloaded member function not found in 'order'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(13): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(14): error C2597: illegal reference to non-static member 'order::_order'
+         Transaction.cpp
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C2146: syntax error : missing ';' before identifier '_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C2146: syntax error : missing ';' before identifier 'get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): warning C4183: 'get_item': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(15): error C2535: 'order::order(void)' : member function already defined or declared
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14) : see declaration of 'order::order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2512: 'std::vector' : no appropriate default constructor available
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(4): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2511: 'order::order(item)' : overloaded member function not found in 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2556: 'std::vector<item,std::allocator<_Ty>> order::get_order(void)' : overloaded function differs only by return type from 'std::vector order::get_order(void)'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2371: 'order::get_order' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2079: 'order::get_order' uses undefined class 'std::vector'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2556: 'item order::get_item(void)' : overloaded function differs only by return type from 'int order::get_item(void)'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2371: 'order::get_item' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2065: '_item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(11): error C2511: 'std::vector<item,std::allocator<_Ty>> order::additem(item)' : overloaded member function not found in 'order'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(13): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(14): error C2597: illegal reference to non-static member 'order::_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6): error C2011: 'order' : 'class' type redefinition
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(18): error C2011: 'item' : 'class' type redefinition
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(18) : see declaration of 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2027: use of undefined type 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2059: syntax error : ')'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2027: use of undefined type 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2146: syntax error : missing ')' before identifier 'thing'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2146: syntax error : missing ';' before identifier 'thing'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2079: 'item' uses undefined class 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2059: syntax error : ')'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2065: '_order' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2143: syntax error : missing '}' before ';'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Source.cpp
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C2146: syntax error : missing ';' before identifier '_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(9): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C2146: syntax error : missing ';' before identifier 'get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11): warning C4183: 'get_item': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(12): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2065: 'item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13): error C2923: 'std::vector' : 'item' is not a valid template type argument for parameter '_Ty'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14): error C2061: syntax error : identifier 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(15): error C2535: 'order::order(void)' : member function already defined or declared
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(14) : see declaration of 'order::order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2512: 'std::vector' : no appropriate default constructor available
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(4): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2 overloads have no legal conversion for 'this' pointer
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2511: 'order::order(item)' : overloaded member function not found in 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2556: 'std::vector<item,std::allocator<_Ty>> order::get_order(void)' : overloaded function differs only by return type from 'std::vector order::get_order(void)'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2371: 'order::get_order' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(13) : see declaration of 'order::get_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(9): error C2079: 'order::get_order' uses undefined class 'std::vector'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2556: 'item order::get_item(void)' : overloaded function differs only by return type from 'int order::get_item(void)'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2371: 'order::get_item' : redefinition; different basic types
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(11) : see declaration of 'order::get_item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(10): error C2065: '_item' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(11): error C2511: 'std::vector<item,std::allocator<_Ty>> order::additem(item)' : overloaded member function not found in 'order'
+                 with
+                 [
+                     _Ty=item
+                 ]
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(13): error C2228: left of '.push_back' must have class/struct/union
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(14): error C2597: illegal reference to non-static member 'order::_order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6): error C2011: 'order' : 'class' type redefinition
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(18): error C2011: 'item' : 'class' type redefinition
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(18) : see declaration of 'item'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2027: use of undefined type 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2059: syntax error : ')'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(2): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2027: use of undefined type 'order'
+                 c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.h(6) : see declaration of 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2146: syntax error : missing ')' before identifier 'thing'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2146: syntax error : missing ';' before identifier 'thing'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2079: 'item' uses undefined class 'order'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C2059: syntax error : ')'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2065: '_order' : undeclared identifier
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): error C2143: syntax error : missing '}' before ';'
+     1>c:\users\madeline\documents\github\coffeeshoptill\coffeeshoptill\coffeeshoptill\order.cpp(7): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         Generating Code...
+     1>Done Building Project "C:\Users\Madeline\Documents\GitHub\CoffeeShopTill\CoffeeShopTill\CoffeeShopTill\CoffeeShopTill.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.96

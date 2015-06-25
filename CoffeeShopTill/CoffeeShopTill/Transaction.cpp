@@ -1,4 +1,5 @@
 #include "Transaction.h"
+#include "order.cpp"
 
 double transaction::totalpt(order Order){
 	double total;
