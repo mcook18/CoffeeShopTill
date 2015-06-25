@@ -1,9 +1,16 @@
 #include "Transaction.h"
 
-double transaction::totalpt(){
-	
+double transaction::totalpt(order Order){
+	double total;
+	for (int i = 0; i < Order.size() - 1; i++){
+		total += Order[i].getcost()
+	}
+	return total;
 }
-double transaction::total() {}
+double transaction::total(double totalpt, double tax) {
+	double _total = totalpt + tax;
+	return _total;
+}
 double transaction::tip(double totalpt, int tipPer){
 	double tip;
 	tip = totalpt / tipPer;
@@ -16,21 +23,15 @@ double transaction::tax(bool iftax, double totalpt){
 	}
 	return tax;
 }
-double transaction::getcost(){ return cost; }
-string transaction::getitem(){ return item; }
+
 int transaction::gettipPer(){ return tipPer; }
 string transaction::getdate(){ return date; }
 bool transaction::getifTax(){ return ifTax; }
-transaction::transaction(){
-	cost = 0;
-	item = "";
-	tipPer = 0;
-	ifTax = true;
-	date = "";
-}
-transaction::transaction(double _cost, string _item, int _tipPer, bool _iftax, string _date){
-	cost = _cost;
-	item = _item;
+order transaction::get_order(){ return _order; }
+
+transaction::transaction(order _Order,  int _tipPer, bool _iftax, string _date){
+	
+	_order = _Order;
 	tipPer = _tipPer;
 	ifTax = _iftax;
 	date = _date;

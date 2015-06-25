@@ -1,27 +1,24 @@
 #include <iostream>
 #include <string>
+#include "order.cpp"
 using namespace std;
 
 class transaction{
 protected:
-	double cost;
-	string item;
+	order _order;
 	int tipPer;//this is the tip percentage
 	bool ifTax;// this tells the program to include tax or not
-	string date;
+	string date; 
 public:
-	double totalpt();// this is the total before tax
-	double total();// final total 
+	double totalpt(order Order);// this is the total before tax
+	double total(double totalpt, double tax);// final total 
 	double tip(double total, int tipPer);
 	double tax(bool iftax, double totalpt);
-	double getcost();
-	string gettype();
-	string getitem();
 	int gettipPer();
 	string getdate();
 	bool getifTax();
-	transaction();
-	transaction(double _cost, string _item, int _tipPer, bool _iftax, string _date);
+	order get_order();
+	transaction(order _Order, int _tipPer, bool _iftax, string _date);
 		
 };
 class cash :public transaction{

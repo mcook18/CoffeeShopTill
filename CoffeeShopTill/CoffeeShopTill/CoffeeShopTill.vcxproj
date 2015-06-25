@@ -76,9 +76,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="order.h" />
     <ClInclude Include="Transaction.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="order.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Transaction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
