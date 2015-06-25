@@ -1,9 +1,13 @@
 #include "order.h"
-
+order::order(){
+	item thing( 0, "");
+	_order.push_back(thing);
+}
 order::order(item thing){
 	_order.push_back(thing);
 }
-vector <item> get_order(){ return _order; }
+vector <item> order::get_order(){ return _order; }
+item order::get_item(){ return _item; }
 vector<item>order::additem(item thing){
 
 	_order.push_back(thing);

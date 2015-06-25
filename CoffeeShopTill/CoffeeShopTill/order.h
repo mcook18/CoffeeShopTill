@@ -5,11 +5,14 @@ using namespace std;
 
 class order{
 protected:
+	item _item;
 	vector<item> _order;
 public:
+	item get_item();
 	vector<item> additem(item thing);
 	vector <item> get_order();
 	order(item thing);
+	order();
 
 };
 class item{
